@@ -27,9 +27,3 @@ def test_avg_weights():
     avg_weights = np.mean(client_weights, axis=0) # See docs to understand why axis=0 at https://numpy.org/doc/stable/reference/generated/numpy.mean.html
     assert(np.array_equal(avg_weights, np.array([3,6])))
 
-def test_containers_up():
-    # First, let's just try to start these containers. Then we'll stop them manually. 
-    mock_x_train, mock_y_train = np.array([[1,2], [1,2]]), np.array([[1,2], [1,2]])
-    num_clients = 2
-    containers_up(mock_x_train, mock_y_train, num_clients)
-

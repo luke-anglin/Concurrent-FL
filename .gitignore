@@ -1,5 +1,8 @@
-env
-.vscode
-.pytest_cache
-__pycache__
-client_results/*
+env/
+.vscode/
+.pytest_cache/
+__pycache__/
+data/
+client_scripts/
+weights/
+ideal_setup.txt
