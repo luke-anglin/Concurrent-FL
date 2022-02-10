@@ -37,9 +37,9 @@ def app():
     # dump model definition 
     pickle.dump(model, open('data/model', 'wb'))
     # Set num_clients
-    num_clients = 5
+    num_clients = 2
     # Set epochs 
-    epochs = 10
+    epochs = 1
 
     # Split data equally for each clients, where the indices specify the client - e.g. x_train[0] is client 0's data
     # ! Note - must be able to be equally split . . . RaggedTensors beware.
